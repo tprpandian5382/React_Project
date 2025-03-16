@@ -4,13 +4,13 @@ pipeline {
     stages {
         stage ('changing the file permission') {
             steps {
-                sh ' chmod +x build.sh'
+                sh ' chmod +x script.sh'
             }
         }
 
         stage ('executing the file') {
             steps {
-                sh './build.sh'
+                sh './script.sh'
             }
         }
     }
